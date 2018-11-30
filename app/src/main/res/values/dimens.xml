@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- News list -->
+    <dimen name="news_list_item_description_margin_end">16dp</dimen>
+    <dimen name="news_list_item_description_margin_top">10dp</dimen>
+    <dimen name="news_list_item_description_text_size">16sp</dimen>
+    <dimen name="news_list_item_title_margin">16dp</dimen>
+    <dimen name="news_list_item_title_text_size">20sp</dimen>
+    <dimen name="news_list_item_image_size">100dp</dimen>
+    <dimen name="news_list_item_image_margin">16dp</dimen>
+</resources>

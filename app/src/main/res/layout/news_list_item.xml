@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/news_list_item_image"
+        android:layout_width="@dimen/news_list_item_image_size"
+        android:layout_height="@dimen/news_list_item_image_size"
+        android:layout_marginBottom="@dimen/news_list_item_image_margin"
+        android:layout_marginEnd="@dimen/news_list_item_image_margin"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/news_list_item_description"/>
+
+    <TextView
+        android:id="@+id/news_list_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/news_list_item_title_margin"
+        android:layout_marginStart="@dimen/news_list_item_title_margin"
+        android:layout_marginTop="@dimen/news_list_item_title_margin"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/news_list_item_title_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Some title"/>
+
+    <TextView
+        android:id="@+id/news_list_item_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/news_list_item_description_margin_end"
+        android:layout_marginTop="@dimen/news_list_item_description_margin_top"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:maxLines="5"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/news_list_item_description_text_size"
+        app:layout_constraintEnd_toStartOf="@id/news_list_item_image"
+        app:layout_constraintStart_toStartOf="@id/news_list_item_title"
+        app:layout_constraintTop_toBottomOf="@id/news_list_item_title"
+        tools:text="Lorem ipsum dolor sit amet, probo reque prompta an pro. "/>
+
+</android.support.constraint.ConstraintLayout>
